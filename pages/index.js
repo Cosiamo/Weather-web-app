@@ -25,6 +25,10 @@ export default function Home() {
     setLoading(false)
   };
 
+  const backgroundImg = () => {
+    return 
+  }
+
   if (loading) {
     return <Spinner />
   } else {
@@ -41,7 +45,7 @@ export default function Home() {
   
         {/* Background image */}
         <Image 
-          src="https://images.unsplash.com/photo-1601134467661-3d775b999c8b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1375&q=80" 
+          src="https://images.unsplash.com/photo-1655939003363-b0d0c13f6d91?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=953&q=80" 
           layout="fill"
           className='object-cover'
         />
@@ -52,7 +56,7 @@ export default function Home() {
             <div>
               <input
                 onChange={(e) => setCity(e.target.value)}
-                className='bg-transparent border-none text-white focus:outline-none text-2xl placeholder:' 
+                className='bg-transparent border-none text-white focus:outline-none text-2xl placeholder: px-2' 
                 type='text' 
                 placeholder="Search city" 
               />
